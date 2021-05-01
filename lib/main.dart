@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './question.dart';
-// import './answer.dart';
+import './answer.dart';
 
 // void main() {
 //   runApp(MyApp());
@@ -11,7 +11,6 @@ void main() => runApp(MyApp());
 class MyApp extends StatefulWidget {
   @override
   State<StatefulWidget> createState() {
-    // TODO: implement createState
     return _MyAppState();
   }
 }
@@ -40,14 +39,17 @@ class _MyAppState extends State<MyApp> {
         body: Column(
           children: [
             Question(questions[_questionIndex]),
-            OutlinedButton(
-                child: Text('Answer 2'),
-                onPressed: () => print('objected and neglected')),
-            TextButton(
-                child: Text('Answer 3'),
-                onPressed: () {
-                  print('Kilo Alpha');
-                }),
+            Answer(),
+            Answer(),
+            Answer(),
+            // OutlinedButton(
+            //     child: Text('Answer 2'),
+            //     onPressed: () => print('objected and neglected')),
+            // TextButton(
+            //     child: Text('Answer 3'),
+            //     onPressed: () {
+            //       print('Kilo Alpha');
+            //     }),
           ],
         ),
       ),
